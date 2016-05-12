@@ -17,9 +17,9 @@
         Note that the source control name must be the same as the artifact name
     -->
     <scm>
-        <connection>scm:svn:http://svn.opencollab.co.za:18080/svn/unipoole/${project.artifactId}/trunk</connection>
-        <developerConnection>scm:svn:http://svn.opencollab.co.za:18080/svn/unipoole/${project.artifactId}/trunk</developerConnection>
-        <url>http://svn.opencollab.co.za:18080/viewvc/unipoole/${project.artifactId}/trunk</url>
+        <connection>scm:git:https://github.com/Unipoole/sakai-service/tree/master</connection>
+        <developerConnection>scm:git:https://github.com/Unipoole/sakai-service/tree/master</developerConnection>
+        <url>https://github.com/Unipoole/sakai-service</url>
     </scm>
     <properties>
         <sonar.language>java</sonar.language>
@@ -222,4 +222,9 @@
             <id>unisa</id>
         </profile>
     </profiles>
+    <url>https://github.com/Unipoole/sakai-service</url>
+    <ciManagement>
+    	<system>Travis-CI</system>
+    	<url>https://travis-ci.org/Unipoole/sakai-service</url>
+    </ciManagement>
 </project>
