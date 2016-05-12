@@ -122,6 +122,30 @@
             <type>jar</type>
         </dependency>
     </dependencies>
+    <repositories>
+        <repository>
+            <name>OpenCollab Nexus Release Repo</name>
+            <id>oc-nexus-releases</id>
+            <url>http://nexus.opencollab.co.za/nexus/content/repositories/releases</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <name>OpenCollab Nexus Snapshot Repo</name>
+            <id>oc-nexus-snapshots</id>
+            <url>http://nexus.opencollab.co.za/nexus/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
     <build>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
         <plugins>
